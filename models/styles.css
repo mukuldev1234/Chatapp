@@ -1,0 +1,218 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login Screen Styles */
+#login-container {
+  display: none;
+  width: 90%;
+  max-width: 500px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+#login-container.active {
+  display: flex;
+  flex-direction: column;
+}
+
+#username {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#username:focus {
+  border-color: #007bff;
+}
+
+#login-button {
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#login-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* App Container Styles */
+#app-container {
+  display: none;
+  width: 90%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+#app-container.active {
+  display: flex;
+}
+
+/* Room Section Styles */
+#room-section {
+  margin-bottom: 20px;
+}
+
+#room-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.room {
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.room:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#room-input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-top: 10px;
+  width: 80%;
+}
+
+#create-room {
+  padding: 10px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#create-room:hover {
+  background-color: #0056b3;
+}
+
+/* Chat Section Styles */
+#chat-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#messages {
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 6px;
+}
+
+/* Message Box Styles */
+.message {
+  background-color: #e8f4ff;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.self {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+.message .username {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.message .text {
+  font-size: 14px;
+}
+
+/* Input Section Styles */
+#input-section {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+}
+
+#message-input:focus {
+  border-color: #007bff;
+}
+
+#send-message {
+  padding: 10px 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#send-message:hover {
+  background-color: #0056b3;
+}
+
+/* Notification Styles */
+.notification {
+  font-size: 12px;
+  color: gray;
+  text-align: center;
+}
+
+/* Typing Indicator Styles */
+#typing-indicator {
+  font-size: 12px;
+  color: gray;
+  padding-left: 20px;
+  margin-top: -10px;
+}
